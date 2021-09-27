@@ -1,0 +1,1213 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: 'Wayfarer';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/fonts/Wayfarer/Wayfarer-Regular/Wayfarer-Regular.eot');
+    src: url('https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/fonts/Wayfarer/Wayfarer-Regular/Wayfarer-Regular.eot?#iefix') format('embedded-opentype'),
+         local('Wayfarer Regular'),
+         local('Wayfarer-Regular'),
+         url('https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/fonts/Wayfarer/Wayfarer-Regular/Wayfarer-Regular.woff2') format('woff2'),
+         url('https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/fonts/Wayfarer/Wayfarer-Regular/Wayfarer-Regular.woff') format('woff'),
+         url('https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/fonts/Wayfarer/Wayfarer-Regular/Wayfarer-Regular.ttf') format('truetype'),
+         url('https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/fonts/Wayfarer/Wayfarer-Regular/Wayfarer-Regular.svg#Wayfarer-Regular') format('svg');
+  }
+
+@font-face {
+    font-family: 'Open Sans Regular';
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/fonts/Open-Sans/Open-Sans-regular/Open-Sans-regular.eot);
+    src: url(https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/fonts/Open-Sans/Open-Sans-regular/Open-Sans-regular.eot?#iefix) format("embedded-opentype"), 
+    url(https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/fonts/Open-Sans/Open-Sans-regular/Open-Sans-regular.woff2) format("woff2"), 
+    url(https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/fonts/Open-Sans/Open-Sans-regular/Open-Sans-regular.woff) format("woff"), 
+    url(https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/fonts/Open-Sans/Open-Sans-regular/Open-Sans-regular.ttf) format("truetype"), 
+    url(https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/fonts/Open-Sans/Open-Sans-regular/Open-Sans-regular.svg#OpenSans) format("svg"); 
+  }
+
+@font-face {
+    font-family: 'Open Sans Semibold';
+    font-weight: 600;
+    font-style: semibold;
+    src: url(https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/fonts/Open-Sans/Open-Sans-600/Open-Sans-600.eot);
+    src: url(https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/fonts/Open-Sans/Open-Sans-600/Open-Sans-600.eot?#iefix) format("embedded-opentype"), 
+    url(https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/fonts/Open-Sans/Open-Sans-600/Open-Sans-600.woff2) format("woff2"), 
+    url(https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/fonts/Open-Sans/Open-Sans-600/Open-Sans-600.woff) format("woff"), 
+    url(https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/fonts/Open-Sans/Open-Sans-600/Open-Sans-600.ttf) format("truetype"), 
+    url(https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/fonts/Open-Sans/Open-Sans-600/Open-Sans-600.svg#OpenSans) format("svg"); 
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url(https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/fonts/Icomoon/icomoon.eot);
+    src: url(https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/fonts/Icomoon/icomoon.eot#iefix) format("embedded-opentype"), url(https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/fonts/Icomoon/icomoon.ttf) format("truetype"), url(https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/fonts/Icomoon/icomoon.woff) format("woff"), url(https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/fonts/Icomoon/icomoon.svg#icomoon) format("svg");
+    font-weight: normal;
+    font-style: normal; 
+}
+  
+body {
+    background: #FFFFFF;
+    text-align: left;
+    font-family: "Open Sans Regular", "Trebuchet MS", "Lucida Grande", "Geneva", Sans-Serif;
+    font-size: 100%;
+    line-height: 1.4;
+    color: black;
+    width: 100%;
+    margin: 0;
+}
+
+/*Start of header and footer CSS*/
+
+[class*="scc_icon-"]:before,
+[class*="scc_icon-"]:after {
+    font-size: 1.5em;
+    display: inline-block;
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+    padding: 0.5em;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: block;
+    background: #222222;
+}
+
+.scc_logo {
+    width: 100px;
+    padding: 0;
+}
+
+#top {
+    padding: 20.3px 16px;
+}
+
+.scc_logo a {
+    display: block;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+footer {
+    background-color: #222222;
+    color: white;
+    padding-bottom: 2rem;
+}
+
+footer a {
+    color: white;
+}
+
+.scc_wrap {
+    padding: 0 16px;
+    max-width: 1544px;
+}
+
+nav.scc_az-links {
+    border: solid white;
+    border-width: 2px 0;
+    background: #007c53;
+    text-align: center;
+    margin: 0;
+    padding: 0 1rem;
+}
+ 
+nav h2 {
+    margin: 0;
+    padding: 0.219rem 0;
+}
+
+footer.scc_footer nav.scc_az-links h2 a {
+    text-decoration: none;
+    line-height: 38px;
+    font-size: 26px;
+}
+
+
+footer.scc_footer nav.scc_az-links ul {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+}
+
+#scc_footer-content ul {
+    padding: 29.5px 0;
+    margin: 0;
+    border-bottom: 1px solid white;
+    list-style: none;
+    line-height: 1.42857143;
+}
+
+#scc_footer-content ul li {
+    margin: .25em 0;
+}
+
+#scc_footer-content ul li a {
+    text-decoration: none;
+    font-size: 0.875em;
+}
+
+#scc_footer-content ul li a:hover {
+    text-decoration: underline;
+}
+
+footer.scc_footer div.scc_row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+footer.scc_footer div.scc_row div:last-child {
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+    text-align: center;
+}
+
+#social-links ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#social-links ul li {
+    margin: 0;
+}
+
+#social-links ul li a span {
+    display: none;
+}
+
+#social-links [class*="scc_icon-"]:before, 
+#social-links [class*="scc_icon-"]:after {
+    padding: 8.75px 0;
+}
+
+.scc_icon-twitter:before, 
+.scc_icon-twitter-after:after {
+    content: "\e931"; 
+}
+
+.scc_icon-facebook:before, 
+.scc_icon-facebook-after:after {
+    content: "\e911"; 
+}
+
+.scc_icon-youtube:before, 
+.scc_icon-youtube-after:after {
+    content: "\e936"; 
+}
+
+.scc_icon-instagram:before, 
+.scc_icon-instagram-after:after {
+    content: "\e916"; 
+}
+
+.scc_icon-mail:before, 
+.scc_icon-mail-after:after {
+    content: "\e919"; 
+}
+
+.scc_info {
+    text-align: center;
+}
+
+.scc_info > p {
+    font-size: 0.75rem;
+    margin: 0 0 1.5rem 0;
+}
+
+.scc_info:after {
+    display: block;
+    margin: 2rem auto;
+    width: 100px;
+    height: 79px;
+    background: url(https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/images/logos/white.png) no-repeat 50%;
+    background-size: 100% auto;
+    content: "";
+}
+
+#jump-to-top {
+    position: fixed;
+    bottom: 0;
+    right: 16px;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    background: #007C53;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+
+#jump-to-top:before {
+    display: block;
+    content: "\e903";
+    font-family: 'icomoon';
+    color: #FFFFFF;
+    margin: -2px 0 3px 0;
+    font-size: 15px;
+}
+
+/*Overwrite media queries causing overlapping white container background */
+#dform_container .container > .twelve {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#dform_container {
+    line-height: 1.4;
+    font-size: 1rem;
+}
+
+#dform_container h1, h1, 
+#dform_container h2, h2, 
+#dform_container h3, h3, 
+#dform_container h4, h4 {
+    color: #000000;
+    font-weight: 400;
+    font-family: "Wayfarer", "Helvetica", "Geneva", Sans-Serif;
+    line-height: 1.6;
+}
+
+#dform_container h1, h1 {
+    font-size: 1.875rem;
+}
+
+#dform_container h2, h2 {
+    font-size: 1.5625rem;
+}
+
+#dform_container h3, h3 {
+    font-size: 1.5625rem;
+}
+
+#dform_container h4, h4 {
+    font-size: 1.375rem;
+}
+
+#form-title-outer {
+    background: #EEEEEE;
+    border-top: 4px solid white;
+}
+
+#form-title-inner {
+    max-width: 1544px;
+    margin: auto;
+}
+
+#form-title {
+    padding: 12px 16px;
+    margin: 0 0 30px 0;
+}
+
+#dform_container {
+    padding: 0;
+}
+
+form.dform {
+    background: #EEEEEE;
+    padding: 30px 16px;
+    margin: 0 0 6px 0;
+}
+
+.dform_widget {
+    position: relative;
+    margin: 30px 0;
+}
+
+#dform_container p, 
+#dform_container div, 
+#dform_container label, 
+#dform_container legend {
+    color: #000000;
+}
+
+label, 
+#dform_container label, 
+legend,
+#dform_container legend {
+    color: #000000;
+    display: block;
+    font-family: 'Open Sans Semibold';
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0 0 8px 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+}
+
+input, 
+#dform_container input, 
+select, 
+#dform_container select, 
+textarea, 
+#dform_container textarea {
+    width: 100%;
+    border: 1px solid #6B6B6B;
+    border-radius: 0;
+    padding: 0.75rem 1rem;
+    background: #FFFFFF;
+    color: #000000;
+    box-sizing: border-box;
+    box-shadow: none;
+    -webkit-appearance: none;
+    font: 400 1em "Open Sans Regular", "Trebuchet MS", "Lucida Grande", "Geneva", Sans-Serif;
+    line-height: 1.4;
+}
+
+input, 
+#dform_container input, 
+select, 
+#dform_container select {
+    height: 50px
+}
+
+textarea, 
+#dform_container textarea {
+    height: 171px;   
+}
+
+select, 
+#dform_container select {
+    appearance: revert;
+    -moz-appearance: revert;
+    -webkit-appearance: revert;
+    color: #000000;
+}
+
+fieldset legend {
+    font-family: "Open Sans Semibold", "Trebuchet MS", "Lucida Grande", "Geneva", Sans-Serif;
+    line-height: 1.4;
+    display: block;
+    margin: 0 0 8px 0;
+}
+
+.radiogroup, 
+#dform_container fieldset {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.radiogroup input, 
+#dform_container input[type='radio'] {
+    border: 2px solid #6B6B6B;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    background: #FFFFFF;
+    padding: 0;
+    margin: -2px 15px 12px 0;
+}
+
+#dform_container .checkboxgroup label, 
+#dform_container .radiogroup label {
+    font-family: 'Open Sans Regular';
+    margin: 0 50px 0 0 ;
+}
+
+.radiogroup input:focus, 
+#dform_container input[type='radio']:focus {
+    -webkit-box-shadow: inset 0 0 0 2px #6B6B6B, 0 0 0 4px #ffcc02;
+    box-shadow: inset 0 0 0 2px #6B6B6B, 0 0 0 4px #ffcc02;
+    outline: none;
+}
+
+.radiogroup input:checked::after, 
+#dform_container input[type='radio']:checked::after {
+    display: block;
+    position: relative;
+    background-color: #6B6B6B;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    content: '';
+    top: 7px;
+    left: 7px;
+}
+
+#dform_container input[type="radio"].dform_fielderror {
+    border-color: #FD3333;
+    outline: none;
+}
+
+#dform_container input[type="radio"].dform_fielderror:focus {
+    -webkit-box-shadow: inset 0 0 0 2px #6b6b6b, 0 0 0 4px #ffcc02;
+    box-shadow: inset 0 0 0 2px #6b6b6b, 0 0 0 4px #ffcc02;
+    outline: none;
+}
+
+.radiogroup label {
+    font-weight: 400;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.dform_widget_type_checkbox > div, 
+#dform_container .container .dform_widget_type_checkbox > div {
+    display: flex;
+    flex-direction: initial;
+}
+
+#dform_container input[type='checkbox'], 
+.dform_widget_type_checkbox input {
+    display: inline-block;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0;
+    background: white;
+}
+
+#dform_container input[type='checkbox']:checked::after, 
+.dform_widget_type_checkbox input:checked::after {
+	content: '';
+	display: block;
+    position: relative;
+    top: -5px;
+    left: -9px;
+	width: 24px;
+	height: 24px;
+	background: #007c53;
+}
+
+.dform_widget_type_checkbox label, 
+#dform_container .dform_widget_type_checkbox label {
+    display: inline-block;
+    font-weight: 400;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#dform_container input[type='date'] {
+    text-transform: uppercase;
+}
+
+#dform_container input:focus, 
+#dform_container textarea:focus, 
+#dform_container select:focus {
+    outline: 4px solid #FFCC02;
+    -webkit-box-shadow: inset 0 0 0 3px #6B6B6B;
+    box-shadow: inset 0 0 0 3px #6B6B6B;
+    border-color: #6B6B6B;
+}
+
+#dform_container .helptext {
+    font-family: 'Open Sans Regular';
+    color: #6B6B6B;
+    font-style: normal; 
+    margin: -8px 0 8px 0;
+}
+
+#dform_container .dform_fielderror {
+    border: 1px solid #FF3333;
+    outline: 1px solid #FF3333;
+    box-shadow: none;
+}
+
+#dform_container .dform_validationMessage, 
+#dform_container #address-lookup-error {
+    font-family: 'Open Sans Semibold';
+    color: #FF3333;
+    line-height: 1.4;
+    margin: 10px 0 4px 0;
+    padding: 0;
+}
+
+#dform_container input.dform_fielderror:focus, 
+#dform_container textarea.dform_fielderror:focus, 
+#dform_container .dform_fielderror:focus {
+    outline: 4px solid #FFCC02;
+    -webkit-box-shadow: inset 0 0 0 3px #6B6B6B;
+    box-shadow: inset 0 0 0 3px #6B6B6B;
+    border-color: #6B6B6B;
+}
+
+input::placeholder, 
+textarea::placeholder {
+    color: #6B6B6B;
+}
+
+#dform_container .container .dform_widget_type_buttonset {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    margin: 50px 0 0 0;
+}
+
+#dform_container .container .dform_widget_type_buttonset button:last-child {
+    margin-bottom: 0;
+}
+
+.dform_widget button, 
+.dform_container button, 
+#dform_container .button, 
+#dform_container input[type="submit"], 
+#dform_container button {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 1.25rem;
+    border-radius: 0;
+    border: 1px solid #007c53;
+    padding: 0.75rem 1.05rem;
+    background: white;
+    text-align: center;
+    font-family: "Open Sans Semibold", "Trebuchet MS", "Lucida Grande", "Geneva", Sans-Serif;
+    font-size: 1rem;
+    line-height: inherit;
+    color: #007c53;
+    cursor: pointer;
+    -webkit-appearance: none;
+    box-shadow: none;
+    transition: none;
+}
+
+#dform_container button[data-type="next"]:hover,
+#dform_container button[data-type="customobject"]:hover,
+.dform_widget button:hover, 
+.dform_container button:hover, 
+#dform_container .button:hover, 
+#dform_container input[type="submit"]:hover, 
+#dform_container button:hover {
+    background: #007C53;
+    color: white;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+#dform_container button[data-type="next"]:focus
+#dform_container button[data-type="customobject"]:focus{
+    outline: 4px solid #FFCC02;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.dform_widget button:focus, 
+.dform_container button:focus, 
+#dform_container .button:focus, 
+#dform_container input[type="submit"]:focus, 
+#dform_container button:focus {
+    outline: 4px solid #FFCC02;
+    background: white;
+    color: #007C53;
+    border: 1px solid #007C53;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    
+}
+
+.dform_widget button:active, 
+.dform_container button:active, 
+#dform_container .button:active, 
+#dform_container input[type="submit"]:active, 
+#dform_container button:active {
+    top: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+
+#dform_container button[data-type="next"], 
+#dform_container button[data-type="customobject"] {
+    border-color: transparent;
+    background: #222;
+    color: white;
+}
+
+#dform_container #dform_widget_buttonset_back-link-container {
+    margin: 0 0 31px 0;
+}
+
+#dform_container .back-link {
+    display: inline-block;
+    background: #EEE;
+    color: #000000;
+    width: 37px;
+    height: auto;
+    padding: 0 0 0 0;
+    margin: 0 0 0 15px;
+    font-weight: normal;
+    border: none;
+    border-bottom: 1px solid #000000;
+    overflow: visible;
+}
+
+#dform_container .back-link:before {
+    position: absolute;
+    width: 15px;
+    margin: 0 0px 0 -15px;
+    background: #EEE;
+    content: '<';
+    color: #000000;
+}
+
+#dform_container .back-link:hover {
+    background: #EEE;
+    color: #000000; 
+    border-bottom: 1px solid #000000;
+    box-shadow: inset 0em -2px #000000;
+    -moz-box-shadow: inset 0em -2px #000000;
+    -webkit-box-shadow: inset 0em -2px #000000;
+}
+
+#dform_container .back-link:focus {
+    outline: none;
+    color: #000000;
+    background: #FFCC00;
+    border: none;
+    border-bottom: 1px solid #000000;
+    box-shadow: inset 0em -2px #000000;
+    -moz-box-shadow: inset 0em -2px #000000;
+    -webkit-box-shadow: inset 0em -2px #000000;
+}
+
+#dform_container .back-link:focus:before {
+    background: #FFCC00;
+    width: 15px;
+    border-bottom: 1px solid #000000;
+    box-shadow: inset 0em -2px #000000;
+    -moz-box-shadow: inset 0em -2px #000000;
+    -webkit-box-shadow: inset 0em -2px #000000;
+}
+
+.alert-panel-top {
+    position: relative;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    padding-left: 3rem;
+    background: #f6f6f6;
+    border-left: 2px solid;
+    border-left-color: #f33;
+    width: 100vw;
+    left: -1rem;
+    top: -3rem;
+}
+
+.alert-panel-top:before {
+    content: '!';
+    position: absolute;
+    top: 2.5rem;
+    left: -1px;
+    margin-top: -20px;
+    margin-right: 13px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 26px;
+    background: #f33;
+    text-align: center;
+    color: white;
+}
+
+.alert-panel-content {
+    width: 80vw;
+}
+
+.notice-panel {
+    position: relative;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    padding-left: 3rem;
+    background: #f6f6f6;
+    border-left: 2px solid;
+    border-left-color: #fc0;
+}
+
+.notice-panel:before {
+    content: 'i';
+    position: absolute;
+    top: 2rem;
+    left: -1px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 26px;
+    text-align: center;
+    border-radius: 0 50% 50% 0;
+    background: #fc0;
+    color: #222;
+}
+
+#dform_container .container .dform_section_box_postcodeLookup {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#dform_container .container .dform_section_box_postcodeLookup > .dform_widget_txt_postcode_search {
+    order: 0;
+    width: 50%;
+    max-width: 210px;
+    margin: auto 0 0 0;
+}
+
+#dform_container .container .dform_section_box_postcodeLookup > .dform_widget_txt_postcode_search > div > input {
+    margin: 0;
+    border-right: 1px solid #007C53;
+}
+
+#dform_container .container .dform_section_box_postcodeLookup > .dform_widget_txt_postcode_search > div > input:focus {
+    margin: 0;
+    border-right: 1px solid #6B6B6B;
+}
+
+#dform_container .container .dform_section_box_postcodeLookup > .dform_widget_txt_postcode_search > div > input.dform_fielderror {
+    border-right: 1px solid #FF3333;
+    z-index: 1;
+    position: relative;
+}
+
+#dform_container .container .dform_section_box_postcodeLookup > .dform_widget_txt_postcode_search > div > input.dform_fielderror:focus {
+    border-right: 1px solid #6B6B6B;
+}
+
+#dform_container .container .dform_section_box_postcodeLookup > .dform_widget_txt_postcode_search > div > input:focus, 
+#dform_container .container .dform_section_box_postcodeLookup > .dform_widget_bset_find_address > button:focus {
+    z-index: 1;
+    position: relative;
+}
+
+#dform_container .container .dform_section_box_postcodeLookup > .dform_widget_bset_find_address {
+    order: 1;
+    width: 135px;
+    margin: auto 0 0 0;
+}
+
+#dform_container .container .dform_section_box_postcodeLookup > .dform_widget_bset_find_address > button {
+    padding: 0;
+    margin: 0;
+    border-left: 1px solid #FFFFFF;
+}
+
+#dform_container .container .dform_section_box_postcodeLookup > .dform_widget_bset_find_address > button:hover {
+    border: 1px solid #007C53
+}
+
+#dform_container .container .dform_section_box_postcodeLookup > .dform_widget_bset_find_address > button:focus {
+    border-left: 1px solid #007C53;
+}
+
+#dform_container .container .dform_section_box_postcodeLookup > .dform_widget_bset_enter_address_manually {
+    order: 2;
+    width: 200px;
+    margin: auto 0 0 0;
+}
+
+#dform_container .container .dform_section_box_postcodeLookup > .dform_widget_bset_enter_address_manually > button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: 0;
+}
+
+#dform_container .container .dform_section_box_postcodeLookup > .dform_widget_bset_enter_address_manually > button:hover {
+    color: #007C53;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+
+/*Privacy policy accordion*/
+#privacy-notice {
+    margin: 50px 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#dform_container .privacy-accordion {
+    font-family: "Wayfarer", "Helvetica", "Geneva", Sans-Serif;
+    font-size: 25px;
+    font-weight: 400;
+    max-width: 100%;
+    height: auto;
+    color: #000000;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 13px 16px;
+    border: solid black;
+    border-width: 1px 0;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+#dform_container .privacy-accordion:after {
+    content: "\e909";
+    font-family: 'icomoon';
+    float: right;
+    background-color: #007C53;
+    color: #FFF;
+    width: 2.25em;
+    height: 2.25em;
+    line-height: 2.35;
+    text-align: center;
+    flex: 0 0 auto;
+    margin: auto 0 auto 10px;
+}
+
+#dform_container .privacy-accordion:hover {
+    background-color: #F6F6F6;
+    color: #000000;
+    border-color: #6B6B6B;
+    border-width: 1px 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#dform_container .privacy-accordion:focus {
+    color: #000000;
+    border-width: 1px 0;
+}
+
+#dform_container .privacy-accordion:hover:after {
+    background-color: #FFFFFF;
+    color: #007C53;
+}
+
+#dform_container .privacy-accordion.active {
+    color: #000000;
+    border-width: 1px 0;
+}
+
+#dform_container .privacy-accordion.active:after {
+    content: "\e90c";
+    font-family: 'icomoon';
+    float: right;
+    background-color: #007C53;
+    color: #FFFFFF;
+    width: 2.25em;
+    height: 2.25em;
+    line-height: 2.35;
+    text-align: center;
+}
+
+#dform_container .privacy-accordion.active:hover:after {
+    background-color: #FFF;
+    color: #007C53;
+}
+
+#dform_container .privacy-panel {
+    font-family: 'Open Sans Regular';
+    display: none;
+    color: black;
+    background: white;
+    width: 100%;
+    padding: 0 1rem;
+    font-weight: 400 !important;
+}
+
+#dform_container .privacy-panel p {
+    margin: 0 0 1em 0;
+}
+
+p.privacy-notice {
+    font-family: 'Open Sans Regular';
+}
+
+@media (min-width: 423px) {
+    #dform_container .privacy-accordion {
+        padding: 24px 16px;
+        line-height: 30px;
+    }
+}
+
+@media (min-width: 44rem){
+    .scc_logo {
+        width: 140px;
+        padding: 0;
+    }
+    
+    #top {
+        padding: 24px 16px;
+        margin: 0 auto;
+    }
+    
+    .scc_wrap {
+        margin: 0 auto;
+        max-width: 1576px;
+    }
+    
+    .scc_logo a {
+        height: 110px;
+    }
+    
+    .scc_logo img {
+        width: 140px;
+        height: 110px;
+        max-width: none;
+        margin: 0;
+    }
+    
+    footer.scc_footer nav.scc_az-links h2 a {
+        font-size: 1.875rem;
+    }
+    
+    nav.scc_az-links {
+        margin: 0 auto 2rem;
+    }
+    
+    [class*="scc_icon-"]:before,
+    [class*="scc_icon-"]:after {
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    footer.scc_footer div.scc_row {
+        margin-bottom: 4rem;
+    }
+
+    #scc_footer-content ul {
+        padding: 0;
+        margin: 0 0 1.5rem 0;
+        border-bottom: none;
+    }
+
+    #scc_footer-content ul li {
+        margin: 0 0 .5em 0;
+    }
+    
+    #scc_footer-content ul li a, 
+    #scc_footer-content ul li a span{
+        font-size: 0.875rem;
+    }
+    
+    #social-links [class*="scc_icon-"]:before, 
+    #social-links [class*="scc_icon-"]:after {
+        padding: 0;
+    }
+  
+    footer.scc_footer div.scc_row {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .scc_footer .scc_wrap .scc_row .scc_col {
+        width: 33.333%;
+        padding: 8px 0;
+    }
+
+    footer.scc_footer div.scc_row div:last-child {
+        -webkit-order: 0;
+        -ms-flex-order: 0;
+        order: 0;
+        text-align: right;
+    }
+
+    #social-links ul {
+        display: block;
+    }
+    
+    #social-links ul li a{
+        display: inline-flex;
+        justify-content: end;
+        align-items: center;   
+    }
+    
+    #social-links ul li a:after {
+        margin-left: .5em;
+    }
+
+    #social-links ul li a span {
+        display: inline;
+        font-size: 0.875rem;
+    }
+
+    .scc_info {
+        display: flex;
+    }
+    
+    .scc_info > p {
+        font-size: 0.875rem;
+    }
+
+    .scc_info .scc_copyright {
+        margin-left: auto;
+    }
+    
+    div.scc_info:after {
+        display: none;
+    }
+    
+    #jump-to-top {
+        display: none;
+    }
+
+    #dform_container h1, h1 {
+        font-size: 3.125rem;
+    }
+
+    #dform_container h2, h2 {
+        font-size: 1.875rem;
+    }
+    
+    #form-title-inner {
+        max-width: 1576px;
+        padding: 0 16px;
+    }
+
+    #form-title {
+        padding: 29px 0 10px 0;
+        margin: 0 0 50px 0;
+    }
+    
+    #dform_holder {
+        max-width: 1576px;
+        margin: auto;
+        padding: 0 16px;
+    }
+    
+    form.dform {
+        width: 100%;
+        background: #EEEEEE;
+        padding: 50px 0;
+        margin: 0 0 26px 0;
+    }
+    
+    #dform_container .container > .twelve,
+    .box, 
+    .dform_page > div > div{
+        padding: 0 100px;
+        max-width: 1544px;
+    }
+
+    .dform_widget_field {
+        max-width: 700px;
+    }
+
+    #dform_container .container .dform_widget_type_text, 
+    #dform_container .container .dform_widget_type_select,
+    #dform_container .container .dform_widget_type_radio,
+    #dform_container .container .dform_widget_type_tel, 
+    #dform_container .container .dform_widget_type_email, 
+    #dform_container .container .dform_widget_type_password,
+    #dform_container .container .dform_widget_type_file,
+    #dform_container .container .dform_widget_type_buttonset,
+    #dform_container .container .dform_widget_type_number,
+    #dform_container .container .dform_widget_type_date,
+    #dform_container .container .dform_widget_type_time, 
+    .notice-panel {
+        width: 445px;
+    }
+    
+    #dform_container .input-box-small > div > select {
+        width: 210px;
+    }
+    
+    .alert-panel-top {
+        left: -7.5%;
+        top: -5rem;
+    }
+    
+    #privacy-notice {
+        max-width: 445px;
+        margin: 62px 0;
+    }
+    
+    #dform_container .container .dform_widget_type_buttonset {
+        margin: 62px 0 0 0;
+    }
+}
+
+@media (min-width: 89rem) {
+    footer.scc_footer nav.scc_az-links h2 {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+
+    footer.scc_footer nav.scc_az-links ul {
+        font-family: "Wayfarer", "Helvetica", "Geneva", Sans-Serif;
+        display: inline-block;
+        position: relative;
+        width: auto;
+        height: auto;
+    }
+
+    footer.scc_footer nav.scc_az-links ul li {
+        display: inline-block;
+        margin: 0;
+        position: relative;
+        width: auto;
+        line-height: 1.25;
+    }
+
+    footer.scc_footer nav.scc_az-links h2 a,
+    footer.scc_footer nav.scc_az-links ul li a {
+        display: block;
+        padding: .5rem 0;
+        min-width: 2.7rem;
+        font-weight: 400;
+        color: white;
+        text-decoration: none !important;
+        font-size: 30px;
+        letter-spacing: 0.67px;
+    }
+    
+    footer.scc_footer nav.scc_az-links ul li:hover, 
+    footer.scc_footer nav.scc_az-links ul li:focus,
+    footer.scc_footer nav.scc_az-links ul li a:focus-visible,
+    footer.scc_footer nav.scc_az-links h2:hover, 
+    footer.scc_footer nav.scc_az-links h2:focus,
+    footer.scc_footer nav.scc_az-links h2 a:focus-visible {
+        background: rgba(255, 255, 255, 0.2);
+        outline: none;
+    }
+
+    footer.scc_footer nav.scc_az-links ul li a span {
+        display: none;
+    }
+}
+
+@media (min-width: 1475px) { 
+    footer.scc_footer nav.scc_az-links h2 {
+        display: inline-flex;
+        margin-right: 16px;
+    }
+
+    footer.scc_footer nav.scc_az-links ul {
+        display: inline-flex;
+    }
+}
